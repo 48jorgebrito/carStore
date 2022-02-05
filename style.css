@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #2f2e2e;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+
+
+}
+.menu__mobile{
+    position: absolute;
+    left: 90%;
+    display: none;
+}
+.menu__mobile i{
+    font-size: 20px;
+    color: #fff;
+   align-items: center;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    
+}
+.menu ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.menu ul li a:hover{
+    color:#535050;
+    transition: 0.5s;
+
+    /*baner1*/
+}
+.baner1{
+    
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-image: url(image/baner1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    position: relative;
+    
+
+}
+.overley{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0, 0, 0.2) ;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.baner1__element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left:50%;
+    transform:translatex(-50%) ;
+    z-index: 2;
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    background-color:transparent;
+    border: 3px solid oldlace;
+    border-radius: 50%;
+   
+}
+
+.title{
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+.title h1{
+    font-size: 50px;
+
+}
+.title p{
+    font-size: 25px;
+    font-weight: lighter;
+}
+.redes{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.redes a{
+    padding: 0 10px;
+    
+}
+.redes a img{
+    width: 40px;
+    height: 40px;
+    
+}
+/*baner black*/
+.baner__black{
+    width: 100%;
+    height: 600px;
+    background-image: url(image/black.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    
+}
+.black__title{
+    margin: 0 auto;
+    color: seashell;
+   
+}
+.black__title h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+}
+.line{
+    margin: 0 auto;
+    width: 40px;
+    height: 3px;
+    background-color: seashell;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+}
+.service__container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    padding: 25px 12% 0;
+   
+}
+.service__single {
+    width: 33%;
+    padding: 5px 10px;
+    
+    
+}
+.service__single h2 {
+    color: seashell;
+    font-size: 18px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-weight: lighter;
+    
+    
+}
+.service__single p {
+    color: seashell;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 22px;
+    
+    
+}
+.circle2{
+    width: 120px;
+    height: 120px;
+    background-color:transparent;
+    border: 3px solid oldlace;
+    border-radius: 50%;
+    margin: 0 auto;
+   
+}
+/*vitrine*/
+.vitrine{
+    width: 100%;
+    text-align: center;
+    padding: 70px 0px 0px;
+   
+
+}
+.vitrine__title{
+    margin: 0 auto;
+    color: #2f2e2e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.vitrine__title h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+}
+.vitrine__title p{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.line__vitrine{
+    margin: 0 auto;
+    width: 40px;
+    height: 3px;
+    background-color: #2f2e2e;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.box__vitrine{
+    padding: 50px 30px 70px;
+     display: flex;
+    flex-wrap: wrap;
+}
+.vitrine__single{
+    
+    width: 33%;
+    height: 300px;
+    
+}
+.vitrine__single img{
+    width: 100%;
+    height:100%;
+    
+}
+/*sobre*/
+.sobre{
+    width: 100%;
+    height: 700px;
+    
+    background-image: url(image/sobre.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    
+}
+.sobre__title{
+    width: 50%;
+    height: 80%;
+    position:absolute;
+    left: 50%; transform:translateX(-50%) ;
+    top: 80px;
+    background-color: #fff;
+    padding: 35px 5px;
+    text-align: center;
+}
+.sobre__title h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #2f2e2e;;
+
+}
+.sobre__title p{
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 15px 0;
+    color: #2f2e2e;;
+}
+.line__sobre{
+    margin: 0 auto;
+    width: 40px;
+    height: 3px;
+    background-color: #2f2e2e;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
+/*baner2*/
+.baner2{
+    width: 100%;
+    height: 500px;
+    background-image: url(image/baner2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*sobre user*/
+.sobre__user{
+    width: 100%;
+    padding-bottom: 40px;
+    background-image: url(image/sobre.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+.carro{
+  margin: 0 auto; 
+  margin-top: 30px; 
+}
+.container__dados{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 40px ; 
+    text-align: center; 
+}
+.dados__title h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    
+
+}
+.dados__title p{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.line__dados{
+    margin: 0 auto;
+    width: 40px;
+    height: 3px;
+    background-color: #2f2e2e;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.box__dados{
+    display: flex;
+    background-color: #fff;
+    max-width: 700px;
+    margin: 0 auto;
+    
+}
+.dados h5{
+    margin: 15px 0px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.dados input{   
+    display: block;
+    width: 300px;
+    height: 30px;
+    padding: 0 10px;
+    outline: none;
+}
+.dados input:hover,:focus{   
+    border:2px solid #ccc
+}
+
+.dados textarea{
+    width: 300px;
+    height: 150px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+.dados input[type="submit"]{
+    background-color:#2f2e2e; 
+    color: #fff;
+    border: none;
+}
+.dados input[type="submit"]:hover{
+    background-color:#817c7c; 
+    cursor: pointer;
+   
+    
+}
+
+.description p{
+    
+    color:#817c7c ;
+    padding-top: 50px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .menu ul{
+        display: none;;
+    }
+
+.title h1{
+    font-size: 30px;
+
+}
+.title p{
+    font-size: 14px;
+    
+}
+    .baner__black{
+        padding-top: 40px;
+        height: 1030px;
+    }
+    
+    .service__single {
+        width: 100%;
+        margin-bottom:20px ;
+            
+    }
+    .box__vitrine{
+        display:block;
+        padding: 20px;
+    }
+    .vitrine__single{
+        width: 100%;
+        height: 400px;
+       
+    }
+    .menu__mobile{
+       display: block;
+    }
+}
+
+
+
+
+
+
+
+.teste_overlay{
+    padding: 50px 0;
+    height: 500px;
+}
+.box__overlay{
+    width: 33%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    background-image: url(image/vitrine1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+ 
+
+.overlay__single{
+    width: 100%;
+    height: 100%;
+    background-color:black; opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: ;
+}
+.overlay__single:hover{
+    
+    background-color:black; 
+    opacity: 0.6;
+    
+    transition: 1000ms;
+    animation-name: overlay1;
+    animation-duration: 1s;
+    
+    
+}
+@keyframes overlay1{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.border-lef-right{
+    border:3px solid wheat;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    margin-top: 14px;
+}
+
+.overlay__single a{
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+    font-size: 15px;opacity: 1;    
+}
+
+   
+ 
+
+        
+        
+   
+
+
