@@ -4,8 +4,11 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 
-.menu{
+header{
     width: 100%;
     height: 50px;
     display: flex;
@@ -16,35 +19,45 @@
     z-index: 1000;
 
 
+
 }
 .menu__mobile{
     position: absolute;
     left: 90%;
     display: none;
+    
+    
 }
 .menu__mobile i{
     font-size: 20px;
     color: #fff;
-   align-items: center;
+    align-items: center;
+    font-size: 30px;
 }
-.menu ul{
+.menu__mobile i:hover{
+    cursor: pointer;
+    color:#a1a1a1;
+    transition: .3s;
+}
+header ul{
     display: flex;
     list-style: none;
     margin: 0 auto;
     
 }
-.menu ul li a{
-    padding: 10px 20px;
-    text-decoration: none;
+header ul li {
+    padding: 10px 20px; 
     color: #fff;
     font-size: 14px;
     font-family: sans-serif;
     font-weight: lighter;
     text-transform: uppercase;
+    transition: 0.3s;
 }
-.menu ul li a:hover{
-    color:#535050;
-    transition: 0.5s;
+header ul li:hover{
+    color:#a1a1a1;
+    
+    cursor: pointer;
 
     /*baner1*/
 }
@@ -389,10 +402,32 @@
 
 
 
-@media screen and (max-width: 768px){
-    .menu ul{
-        display: none;;
-    }
+@media screen and (max-width: 865px){
+
+
+    .menu{
+        background-color: rgba(0, 0, 0, 0.822);
+        position: absolute;
+        top: 50px;
+        left:-100%;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        transition: .3s;
+        border-top:1px solid #504d4d;
+}
+.active{
+    left:0;
+    
+}
+.menu li  {
+    background-color: #2f2e2e;
+     
+}
+.menu li:hover  {
+    border-bottom:1px solid #504d4d;
+
+}
 
 .title h1{
     font-size: 30px;
@@ -430,70 +465,6 @@
 
 
 
-
-
-.teste_overlay{
-    padding: 50px 0;
-    height: 500px;
-}
-.box__overlay{
-    width: 33%;
-    height: 300px;
-    margin: 0 auto;
-    margin-top: 50px;
-    position: relative;
-    background-image: url(image/vitrine1.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-}
- 
-
-.overlay__single{
-    width: 100%;
-    height: 100%;
-    background-color:black; opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: ;
-}
-.overlay__single:hover{
-    
-    background-color:black; 
-    opacity: 0.6;
-    
-    transition: 1000ms;
-    animation-name: overlay1;
-    animation-duration: 1s;
-    
-    
-}
-@keyframes overlay1{
-    0%{
-        transform: scale(0.5);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-.border-lef-right{
-    border:3px solid wheat;
-    width: 90%;
-    height: 90%;
-    margin: 0 auto;
-    margin-top: 14px;
-}
-
-.overlay__single a{
-    text-align: center;
-    text-decoration: none;
-    color:#fff;
-    font-size: 15px;opacity: 1;    
-}
-
-   
  
 
         
